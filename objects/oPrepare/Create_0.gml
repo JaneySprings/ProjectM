@@ -1,12 +1,12 @@
 //Legal key founding
-/*if file_exists("permision.dll") {
+if file_exists("permision.dll") {
 	var f = file_text_open_read("permision.dll");
 	key = file_text_read_string(f);
-	if (key != "31122019:illegal300300228300")
+	if (key != "ADMIN_DEVELOPER_VIEW")
 		game_end();
 	file_text_close(f);
 }
-else game_end();*/
+else game_end();
 
 //Define
 #macro ScreenWidth 1920
