@@ -1,0 +1,101 @@
+{
+    "id": "33a4623e-b4e8-4f9c-a7ef-a330eee8dd74",
+    "modelName": "GMObject",
+    "mvc": "1.0",
+    "name": "oWallTransition",
+    "eventList": [
+        {
+            "id": "9fcffde8-3a71-496f-a233-a942963a1f8d",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "33a4623e-b4e8-4f9c-a7ef-a330eee8dd74"
+        },
+        {
+            "id": "29d977f8-2e3b-417b-bc65-bdf3fd26bfe3",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 3,
+            "m_owner": "33a4623e-b4e8-4f9c-a7ef-a330eee8dd74"
+        },
+        {
+            "id": "20a57c64-9213-4db5-b1f2-20dc9cc99191",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "f695b948-2c12-468c-b54f-61f60135bddd",
+            "enumb": 0,
+            "eventtype": 4,
+            "m_owner": "33a4623e-b4e8-4f9c-a7ef-a330eee8dd74"
+        }
+    ],
+    "maskSpriteId": "00000000-0000-0000-0000-000000000000",
+    "overriddenProperties": null,
+    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "persistent": false,
+    "physicsAngularDamping": 0.1,
+    "physicsDensity": 0.5,
+    "physicsFriction": 0.2,
+    "physicsGroup": 0,
+    "physicsKinematic": false,
+    "physicsLinearDamping": 0.1,
+    "physicsObject": false,
+    "physicsRestitution": 0.1,
+    "physicsSensor": false,
+    "physicsShape": 1,
+    "physicsShapePoints": null,
+    "physicsStartAwake": true,
+    "properties": [
+        {
+            "id": "6d6703ad-71e3-4d3c-9d53-d6ae4f3991db",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "noone",
+            "varName": "AudioToNext",
+            "varType": 5
+        },
+        {
+            "id": "c369f284-9e52-477d-a743-12b6a0a0a255",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "noone",
+            "varName": "Target",
+            "varType": 5
+        },
+        {
+            "id": "ae1dfeb1-bd8d-46ca-bb28-2afd0be404fe",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "-1",
+            "varName": "ScriptIndex",
+            "varType": 0
+        }
+    ],
+    "solid": false,
+    "spriteId": "df6f1059-a9e2-4892-ac0c-1c8a5561448d",
+    "visible": false
+}

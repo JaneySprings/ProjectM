@@ -1,0 +1,101 @@
+{
+    "id": "538b64b6-4e02-4ec1-89f7-d27aadd9647f",
+    "modelName": "GMObject",
+    "mvc": "1.0",
+    "name": "oLight",
+    "eventList": [
+        {
+            "id": "484e45c6-4f4f-4570-a7d8-761536212492",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 0,
+            "m_owner": "538b64b6-4e02-4ec1-89f7-d27aadd9647f"
+        },
+        {
+            "id": "6c944bdc-6337-41b2-b24b-efccb618fdc3",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 1,
+            "m_owner": "538b64b6-4e02-4ec1-89f7-d27aadd9647f"
+        },
+        {
+            "id": "3c942499-eaf3-4b22-956f-f7c342b7c161",
+            "modelName": "GMEvent",
+            "mvc": "1.0",
+            "IsDnD": false,
+            "collisionObjectId": "00000000-0000-0000-0000-000000000000",
+            "enumb": 0,
+            "eventtype": 8,
+            "m_owner": "538b64b6-4e02-4ec1-89f7-d27aadd9647f"
+        }
+    ],
+    "maskSpriteId": "00000000-0000-0000-0000-000000000000",
+    "overriddenProperties": null,
+    "parentObjectId": "00000000-0000-0000-0000-000000000000",
+    "persistent": false,
+    "physicsAngularDamping": 0.1,
+    "physicsDensity": 0.5,
+    "physicsFriction": 0.2,
+    "physicsGroup": 0,
+    "physicsKinematic": false,
+    "physicsLinearDamping": 0.1,
+    "physicsObject": false,
+    "physicsRestitution": 0.1,
+    "physicsSensor": false,
+    "physicsShape": 1,
+    "physicsShapePoints": null,
+    "physicsStartAwake": true,
+    "properties": [
+        {
+            "id": "76172903-50e7-412e-ab2c-949b7fb29382",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": true,
+            "rangeMax": 15,
+            "rangeMin": 1,
+            "resourceFilter": 1023,
+            "value": "1",
+            "varName": "LightArea",
+            "varType": 1
+        },
+        {
+            "id": "c4a88e3c-c7a6-41a3-b0b0-2eae3dd2b08a",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "Pixel",
+            "varName": "sprite_index",
+            "varType": 5
+        },
+        {
+            "id": "a08094b6-9ee2-4a1c-a693-56ac07ca2392",
+            "modelName": "GMObjectProperty",
+            "mvc": "1.0",
+            "listItems": null,
+            "multiselect": false,
+            "rangeEnabled": false,
+            "rangeMax": 10,
+            "rangeMin": 0,
+            "resourceFilter": 1023,
+            "value": "$FFFFFFFF",
+            "varName": "image_blend",
+            "varType": 7
+        }
+    ],
+    "solid": false,
+    "spriteId": "00000000-0000-0000-0000-000000000000",
+    "visible": true
+}

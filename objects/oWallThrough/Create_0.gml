@@ -1,0 +1,2 @@
+ThisWall = noone;
+Peel = false;

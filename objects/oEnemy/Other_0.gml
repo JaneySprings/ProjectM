@@ -1,0 +1,1 @@
+CurrentHp = -1;
