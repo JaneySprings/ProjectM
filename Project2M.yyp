@@ -154,7 +154,7 @@
             "Key": "0d5fb820-6764-4d7a-b1da-d1e897bdb3ac",
             "Value": {
                 "id": "ed81387c-25f8-440c-b4cc-319983258eda",
-                "resourcePath": "tilesets\\tileset_Setting\\tileset_Setting.yy",
+                "resourcePath": "tilesets\\tCommonTiles\\tCommonTiles.yy",
                 "resourceType": "GMTileSet"
             }
         },
@@ -195,6 +195,14 @@
             "Value": {
                 "id": "e2e3c0be-d8a0-4e2a-86b7-8be0ac18ca02",
                 "resourcePath": "sprites\\Mask9\\Mask9.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "142bbf71-ee93-49c4-85d9-ec235fb28060",
+            "Value": {
+                "id": "51595c67-966c-4b83-a42a-ba935bcff036",
+                "resourcePath": "sprites\\BridgeBackgroundTiles\\BridgeBackgroundTiles.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -431,6 +439,14 @@
             }
         },
         {
+            "Key": "2cba1468-5c2a-4f1d-9c4a-ed45a3c2528d",
+            "Value": {
+                "id": "d288882f-de27-4cb1-8008-15d9b50f7b70",
+                "resourcePath": "views\\2cba1468-5c2a-4f1d-9c4a-ed45a3c2528d.yy",
+                "resourceType": "GMFolder"
+            }
+        },
+        {
             "Key": "2d494ca6-7837-4f62-a840-338bfb7f770e",
             "Value": {
                 "id": "b8fe053a-8d89-414e-b667-c25b1818a308",
@@ -610,7 +626,7 @@
             "Key": "47f7cd36-2427-4b23-b323-30899dd303e0",
             "Value": {
                 "id": "2b34d0c7-6062-4400-a515-5b430f1c2114",
-                "resourcePath": "tilesets\\tileset_BridgeInterier\\tileset_BridgeInterier.yy",
+                "resourcePath": "tilesets\\tBridgeMiddleground\\tBridgeMiddleground.yy",
                 "resourceType": "GMTileSet"
             }
         },
@@ -722,7 +738,7 @@
             "Key": "50bc2c3f-17e8-465f-a864-2a1e0681863a",
             "Value": {
                 "id": "4ec9b447-87b1-43e7-98cb-855f847b9331",
-                "resourcePath": "sprites\\BridgeInterior\\BridgeInterior.yy",
+                "resourcePath": "sprites\\BridgeMiddlegroundTiles\\BridgeMiddlegroundTiles.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -778,7 +794,7 @@
             "Key": "56c0078b-ad81-43d2-9335-4b1e4e276682",
             "Value": {
                 "id": "e3a3d7d5-52a5-46e0-959e-a9f44da5701b",
-                "resourcePath": "tilesets\\tileset_BridgeMain\\tileset_BridgeMain.yy",
+                "resourcePath": "tilesets\\tBridgeBackground\\tBridgeBackground.yy",
                 "resourceType": "GMTileSet"
             }
         },
@@ -842,7 +858,7 @@
             "Key": "663058f1-8af3-4277-a2e4-4093ed173939",
             "Value": {
                 "id": "2da676c1-ad04-4e94-9a09-345e624625f5",
-                "resourcePath": "tilesets\\tileset_BridgeForward\\tileset_BridgeForward.yy",
+                "resourcePath": "tilesets\\tBridgeForeground\\tBridgeForeground.yy",
                 "resourceType": "GMTileSet"
             }
         },
@@ -1151,14 +1167,6 @@
             }
         },
         {
-            "Key": "87c6cfe1-a8cc-4ad1-aa0d-291d915f0347",
-            "Value": {
-                "id": "8e30e951-2c32-4052-85e0-2e205d584a57",
-                "resourcePath": "rooms\\R_Bridge\\R_Bridge.yy",
-                "resourceType": "GMRoom"
-            }
-        },
-        {
             "Key": "888d7a02-db48-4613-ba69-ceae7b7fd9d0",
             "Value": {
                 "id": "2eb75ce2-4569-4c25-82de-55a3bd5d76bd",
@@ -1179,6 +1187,14 @@
             "Value": {
                 "id": "c6000e4c-6b1e-4fd0-9478-4bf373454f6d",
                 "resourcePath": "sprites\\ScrollerImage02\\ScrollerImage02.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "8dc9cbf3-dad0-4521-af90-4b2e60bbf889",
+            "Value": {
+                "id": "b9695585-3460-454a-9cb0-d94ebbe540b3",
+                "resourcePath": "sprites\\sprite77\\sprite77.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1316,14 +1332,6 @@
                 "id": "57d56bfe-8e9c-48cd-82e5-0e51b3a2a372",
                 "resourcePath": "sprites\\ScrollerImage03\\ScrollerImage03.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "9913ec05-4d06-404d-a27c-152a048cb084",
-            "Value": {
-                "id": "282fa8e4-9dd9-40b4-aa48-d8ebe18f4d14",
-                "resourcePath": "views\\9913ec05-4d06-404d-a27c-152a048cb084.yy",
-                "resourceType": "GMFolder"
             }
         },
         {
@@ -1655,22 +1663,6 @@
             }
         },
         {
-            "Key": "b69a9936-d2e1-4928-9ce3-78e1a6ec7c7f",
-            "Value": {
-                "id": "cebdb861-9f48-4ada-840a-7eb2d41f2d0b",
-                "resourcePath": "views\\b69a9936-d2e1-4928-9ce3-78e1a6ec7c7f.yy",
-                "resourceType": "GMFolder"
-            }
-        },
-        {
-            "Key": "b730ae98-7a3f-4e61-91b1-72ef1f5868c7",
-            "Value": {
-                "id": "216c6af6-ef08-4c78-991e-dccf583eb082",
-                "resourcePath": "rooms\\R_AcientRuin\\R_AcientRuin.yy",
-                "resourceType": "GMRoom"
-            }
-        },
-        {
             "Key": "b754f8b8-80f9-48b2-89c0-ad970e2f3adc",
             "Value": {
                 "id": "29325e0f-c568-4269-8700-95cc9860e41f",
@@ -1842,7 +1834,7 @@
             "Key": "cd3f57e7-3729-43a7-8dc0-a4cf7cd1b97a",
             "Value": {
                 "id": "975b2a2e-e2ee-4e16-8ff5-dd4008c438d3",
-                "resourcePath": "sprites\\BridgePlants\\BridgePlants.yy",
+                "resourcePath": "sprites\\BridgeForegroundTiles\\BridgeForegroundTiles.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -2180,14 +2172,6 @@
                 "id": "f24a7882-e66b-41ff-aadb-9a33bc7f0d1c",
                 "resourcePath": "sprites\\Mask1\\Mask1.yy",
                 "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "f391d9fb-1ef9-4e1b-8a59-0c889460c2c1",
-            "Value": {
-                "id": "44140bde-9c44-418d-a602-2cf0c16699dd",
-                "resourcePath": "rooms\\OLD_R_BeforeBridge\\OLD_R_BeforeBridge.yy",
-                "resourceType": "GMRoom"
             }
         },
         {

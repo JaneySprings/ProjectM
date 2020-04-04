@@ -10,7 +10,7 @@ ArrayW =					GeneratedRoomWidth / GeneratedBlockWidth;
 ArrayH =					GeneratedRoomHeight / GeneratedBlockHeight;
 
 //Update layer id
-MainTileLayer_id =			layer_tilemap_get_id(layer_get_id("TilesMain"));
-InterierTileLayer_id =		layer_tilemap_get_id(layer_get_id("TilesInterier"));
-ForwardTileLayer_id =		layer_tilemap_get_id(layer_get_id("TilesForeground"));
+MainTileLayer_id =			layer_tilemap_get_id(layer_get_id("BackgroundTilesLayer"));
+InterierTileLayer_id =		layer_tilemap_get_id(layer_get_id("MiddlegroundTilesLayer"));
+ForwardTileLayer_id =		layer_tilemap_get_id(layer_get_id("ForegroundTilesLayer"));
 SettingTileLayer_id =		layer_tilemap_get_id(layer_get_id("TilesCasters"));

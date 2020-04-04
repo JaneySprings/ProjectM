@@ -1,26 +1,23 @@
 menu_x += (menu_x_target - menu_x) / menu_speed;
 //key
-var key_up =		global.keyUpP;
-var key_down =		global.keyDownP;
-var key_enter =		global.keyEnterP;
+var _keycodeUp =		global.keyUpP;
+var _keycodeDown =		global.keyDownP;
+var _keycodeEnter =		global.keyEnterP;
 
 if (menu_control) {
-	if (key_up)
-	{	
+	if (_keycodeUp) {	
 		audio_play_sound(sMenuControl,1,false);
 		menu_cursor++;
-		if (menu_cursor >= menu_items)
-			menu_cursor = 0;
+		if (menu_cursor >= menu_items) menu_cursor = 0;
 	}
-	if (key_down)
-	{
+	
+	if (_keycodeDown) {
 		audio_play_sound(sMenuControl,1,false);
 		menu_cursor--;
-		if (menu_cursor < 0)
-			menu_cursor = menu_items-1;
+		if (menu_cursor < 0) menu_cursor = menu_items-1;
 	}
-	if (key_enter)
-	{
+	
+	if (_keycodeEnter) {
 		audio_play_sound(sMenuConfirm,1,false);
 		menu_committed = menu_cursor;
 		menu_control = false;
@@ -30,14 +27,12 @@ if (menu_control) {
 //menu switch
 if (menu_committed != -1)
 	switch (menu_committed) {
-		//Continue
-		case 4:
-		//load all global list
+		case 4: //Button continue
 		scrLoadGlobals();
-		//Get index
+		//Get index for map generator
 		global.ScriptIndex = scrGetGlobals("ScriptIndex");
 		global.MapSprite = noone;
-		//Set generator
+		//Instant generator
 		with(instance_create_layer(x,y,"PostfxLayer",MAP_GENERATOR)) {
 				GenerationScriptIndex = scrGetGlobals("ScriptIndex");
 				PlayerSpawnpoint_X = scrGetGlobals("X");
@@ -47,7 +42,7 @@ if (menu_committed != -1)
 				CreateStartCutscene = true;
 			}
 		//Other
-		with (oNews) hide = true;
+		//with (oNews) hide = true;
 		audio_stop_sound(database0);
 		instance_destroy();
 		
@@ -64,7 +59,7 @@ if (menu_committed != -1)
 				PlayerSpawnpoint_Y = 478;
 				AudioPlayId = database1;
 				TargetRoomIndex = rLostRuins;
-				CreateStartCutscene = true;
+				CreateStartCutscene = true; //TRUE!!!
 			}
 			//Other
 			with (oNews) hide = true;
@@ -88,16 +83,12 @@ if (menu_committed != -1)
 	}	
 	
 //alpha
-if (alpha_set)
-{
+if (alpha_set) {
 	alpha -= 0.01;	
-	if (alpha == 0.3)
-		alpha_set = false;
+	if (alpha == 0.3) alpha_set = false;
 }
 
-if (!alpha_set)
-{
+if (!alpha_set) {
 	alpha += 0.01;	
-	if (alpha > 1)
-		alpha_set = true;
+	if (alpha > 1) alpha_set = true;
 }

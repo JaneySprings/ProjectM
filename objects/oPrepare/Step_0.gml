@@ -22,7 +22,7 @@ switch(CurrentFrameMode) {
 	case 3: room_goto_next(); break;  
 }
 
-if (_any) and (CurrentFrameMode > 1) CurrentFrameMode++;
+if (_any) and (CurrentFrameMode > 0) CurrentFrameMode++;
 
 //particles
 scrLoadPartPattern();
