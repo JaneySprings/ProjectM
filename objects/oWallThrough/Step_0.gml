@@ -1,4 +1,4 @@
-if (global.keyDown) and (global.keySpaceP) and (place_meeting(x,y-1,oPlayer)) Peel = true;
+if (global.InputKeycodeDOWN) and (global.InputKeycodeSPACE_pressed) and (place_meeting(x,y-1,oPlayer)) Peel = true;
 
 if (instance_exists(oPlayer)) {
 	if ((oPlayer.y + 14) < y) {

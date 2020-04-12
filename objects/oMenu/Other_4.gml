@@ -1,1 +1,1 @@
-menu_speed = 24;
+MenuTransitionSpeed = 24;

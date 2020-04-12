@@ -1,5 +1,5 @@
-	var _w = ScreenWidth;
-	var _h = ScreenHeight;
+	var _w = const_ScreenWidth_native;
+	var _h = const_ScreenHeight_native;
 	
 	draw_sprite_ext(Pixel,0,0,ypos,_w,128,0,c_black,1);
 	draw_sprite_ext(Pixel,0,0,_h-ypos,_w,-128,0,c_black,1);

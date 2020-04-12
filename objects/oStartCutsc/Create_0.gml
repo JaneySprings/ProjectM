@@ -16,6 +16,6 @@ if (ShowStartCutsc) {
 	oCamera.y = 128;
 }
 with (oPlayer) {
-	DisableInput = true;
-	HideUI = true;
+	function_DisableUserInput = true;
+	function_SetPlayerUiInvisible = true;
 }

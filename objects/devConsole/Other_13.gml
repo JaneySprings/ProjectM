@@ -63,8 +63,8 @@ switch (command_to_run) {
 			third_level[builtin++] = "friction"
 			third_level[builtin++] = "gravity"
 			third_level[builtin++] = "gravity_direction"
-			third_level[builtin++] = "hspeed"
-			third_level[builtin++] = "vspeed"
+			third_level[builtin++] = "physics_VelocityHeed"
+			third_level[builtin++] = "physics_VelocityVeed"
 			third_level[builtin++] = "xstart"
 			third_level[builtin++] = "ystart"
 		}

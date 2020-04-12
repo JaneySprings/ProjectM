@@ -98,7 +98,7 @@
             "Key": "07c988f3-a4d1-4e39-9078-40b2542ff416",
             "Value": {
                 "id": "31b15337-748c-40f6-bf06-5d7c605a0756",
-                "resourcePath": "sprites\\MishaWalk\\MishaWalk.yy",
+                "resourcePath": "sprites\\DefaultPlayerWalk\\DefaultPlayerWalk.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -106,7 +106,7 @@
             "Key": "0859860f-61d3-4b65-a99d-70081fe430d8",
             "Value": {
                 "id": "9695370a-b518-4f6e-b4e1-bf8bf9f518f1",
-                "resourcePath": "sprites\\MishaStairs\\MishaStairs.yy",
+                "resourcePath": "sprites\\DefaultPlayerLand\\DefaultPlayerLand.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -162,7 +162,7 @@
             "Key": "0dab2423-3ee5-468c-9bb5-cd287ec60c80",
             "Value": {
                 "id": "58764904-b897-4ae2-943c-b7467399c13f",
-                "resourcePath": "sprites\\MishaJump\\MishaJump.yy",
+                "resourcePath": "sprites\\DefaultPlayerJump\\DefaultPlayerJump.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -594,7 +594,7 @@
             "Key": "40b38d44-b3a6-46f5-9891-336e83ceb73b",
             "Value": {
                 "id": "712126f9-fc89-41e9-8939-62bf57d6b070",
-                "resourcePath": "sprites\\MishaIdle\\MishaIdle.yy",
+                "resourcePath": "sprites\\DefaultPlayerIdle\\DefaultPlayerIdle.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -628,14 +628,6 @@
                 "id": "2b34d0c7-6062-4400-a515-5b430f1c2114",
                 "resourcePath": "tilesets\\tBridgeMiddleground\\tBridgeMiddleground.yy",
                 "resourceType": "GMTileSet"
-            }
-        },
-        {
-            "Key": "492abeeb-80a9-44c8-b973-7c147eb9b407",
-            "Value": {
-                "id": "f0f46beb-a97d-4b9c-b071-e888d4636340",
-                "resourcePath": "sprites\\AbilityIcon\\AbilityIcon.yy",
-                "resourceType": "GMSprite"
             }
         },
         {
@@ -1071,14 +1063,6 @@
             }
         },
         {
-            "Key": "7d9054cf-d163-4e19-9dbd-9d077d84ad37",
-            "Value": {
-                "id": "a15fa9f6-69ff-45e9-8dc3-7708e12ecac1",
-                "resourcePath": "sprites\\SoulsIcon\\SoulsIcon.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
             "Key": "7e093a2a-e51c-4a1e-9a53-f9080d38730b",
             "Value": {
                 "id": "5ba1713c-68d5-4269-b205-0d9732ea938b",
@@ -1191,11 +1175,11 @@
             }
         },
         {
-            "Key": "8dc9cbf3-dad0-4521-af90-4b2e60bbf889",
+            "Key": "8bbb1f97-632f-4e4d-a64f-abb90b2e6dff",
             "Value": {
-                "id": "b9695585-3460-454a-9cb0-d94ebbe540b3",
-                "resourcePath": "sprites\\sprite77\\sprite77.yy",
-                "resourceType": "GMSprite"
+                "id": "d54b4f23-0f61-46bb-baf7-d08211f42198",
+                "resourcePath": "views\\8bbb1f97-632f-4e4d-a64f-abb90b2e6dff.yy",
+                "resourceType": "GMFolder"
             }
         },
         {
@@ -1386,7 +1370,7 @@
             "Key": "9dc5d7d4-d34a-44e3-a033-d7571b290b9c",
             "Value": {
                 "id": "7503c4ea-6493-4cbd-9c94-e0315e3add0e",
-                "resourcePath": "sprites\\MishaCrawl\\MishaCrawl.yy",
+                "resourcePath": "sprites\\DefaultPlayerCrawl\\DefaultPlayerCrawl.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1426,7 +1410,7 @@
             "Key": "a3860e52-83c3-48d2-9507-2c546d6a73e2",
             "Value": {
                 "id": "36af1495-b586-4ed6-91a9-abddba1b2036",
-                "resourcePath": "sprites\\MishaLay\\MishaLay.yy",
+                "resourcePath": "sprites\\DefauiltPlayerLay\\DefauiltPlayerLay.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1890,7 +1874,7 @@
             "Key": "cfc3ee75-3920-4835-b5f2-c4ad3b6ca941",
             "Value": {
                 "id": "7f5917c6-13a0-4d6c-9808-704605e073b3",
-                "resourcePath": "sprites\\MishaLayOpen\\MishaLayOpen.yy",
+                "resourcePath": "sprites\\DefauiltPlayerLayopen\\DefauiltPlayerLayopen.yy",
                 "resourceType": "GMSprite"
             }
         },
@@ -1898,7 +1882,7 @@
             "Key": "d085f1d5-ffb8-49d5-a0f5-305c17e11af7",
             "Value": {
                 "id": "8c956574-1eac-4890-9f7c-4f856267ef87",
-                "resourcePath": "objects\\oPrepare\\oPrepare.yy",
+                "resourcePath": "objects\\oInitialize\\oInitialize.yy",
                 "resourceType": "GMObject"
             }
         },
@@ -2082,7 +2066,7 @@
             "Key": "ed91bfa6-9fc2-4a67-bfa9-99c09086da3c",
             "Value": {
                 "id": "ea0517f8-2ace-48c0-aa41-6e8950dba241",
-                "resourcePath": "scripts\\scrGetAudioId\\scrGetAudioId.yy",
+                "resourcePath": "scripts\\scrGetAudioByName\\scrGetAudioByName.yy",
                 "resourceType": "GMScript"
             }
         },
@@ -2325,10 +2309,6 @@
         "ad901edf-6ac6-4cc0-8754-009b8825ac84",
         "6ec161d8-d914-4a29-b5e2-51700a0687f2",
         "b55dfa8f-9e8d-45f0-b831-29e07f45ce44",
-        "ed91bfa6-9fc2-4a67-bfa9-99c09086da3c",
-        "c0bf9b36-5ef5-4ba9-ac34-d05403f82988",
-        "d81c630c-2489-4505-b7e2-6a20ca506c4d",
-        "a33f3ec6-03d3-4139-8ca9-27380885f269",
         "50980f68-d5d2-4179-98a3-f5b5ffd65a18",
         "cd9f3cb0-8ad7-4d1d-912f-3e7bc140c26c",
         "ff58f51a-0283-4952-8161-34ea8fc258b9",
@@ -2338,7 +2318,11 @@
         "7ee58bca-752f-7f8e-a648-e47de3047248",
         "6ac70f83-bae8-4a4d-99b3-7f722a974c96",
         "ffe1fa90-35ce-45f4-95ad-2f5c73198d76",
-        "3e83478b-7439-4a83-9d9c-54ac982277c3"
+        "3e83478b-7439-4a83-9d9c-54ac982277c3",
+        "ed91bfa6-9fc2-4a67-bfa9-99c09086da3c",
+        "c0bf9b36-5ef5-4ba9-ac34-d05403f82988",
+        "d81c630c-2489-4505-b7e2-6a20ca506c4d",
+        "a33f3ec6-03d3-4139-8ca9-27380885f269"
     ],
     "tutorial": ""
 }

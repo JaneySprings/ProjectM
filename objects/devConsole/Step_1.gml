@@ -394,7 +394,7 @@ if (display_frame > 0) { // I'm open
 									#region none focused so they are going from text box down (so select the top one)
 									if (nothing_was_focused == true) {
 								
-										#region to stop any invisible ones being focused still just loop through and remove them 
+										#region to stop any function_SetPlayerInvisible ones being focused still just loop through and remove them 
 										var predictions_focused_count = array_length_1d(predictions_focused)
 										for (var i = 0; i <= predictions_focused_count; ++i) {
 											predictions_focused[i] = false
@@ -490,7 +490,7 @@ if (display_frame > 0) { // I'm open
 											}
 										}
 									} 
-									if (to_select == -1) { // player has nothing focused OR the focused one was invisible (select top visible)
+									if (to_select == -1) { // player has nothing focused OR the focused one was function_SetPlayerInvisible (select top visible)
 										for (var i = 0; i < command_1.size; ++i) {
 										    if (commands_visible[i] == true) {
 												to_select = i
@@ -524,7 +524,7 @@ if (display_frame > 0) { // I'm open
 											}
 										}
 									} 
-									if (to_select == -1) { // player has nothing focused OR the focused one was invisible (select top visible)
+									if (to_select == -1) { // player has nothing focused OR the focused one was function_SetPlayerInvisible (select top visible)
 										for (var i = 0; i < predictions_count; ++i) {
 										    if (predictions_visible[i] == true) {
 												to_select = i

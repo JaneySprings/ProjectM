@@ -13,8 +13,8 @@
 	} else if (tick < 760) tick = 760;
 		
 	if (ShowStartCutsc) and (alpha <= 0) and (oCamera.y < oPlayer.y) and (tick > 150) oCamera.y+=0.5; 
-	if (tick > 1) and (tick <= 1020) with (oPlayer) sprite_index = MishaLay;
-	if (tick > 1020) and (tick < 1200) with (oPlayer) sprite_index = MishaLayOpen;
+	if (tick > 1) and (tick <= 1020) with (oPlayer) sprite_index = DefauiltPlayerLay;
+	if (tick > 1020) and (tick < 1200) with (oPlayer) sprite_index = DefauiltPlayerLayopen;
 	if (tick >= 1200) and (!ShowStartCutsc) {
 		if (ypos >= -128) ypos -=6;
 		else tick = 1340;

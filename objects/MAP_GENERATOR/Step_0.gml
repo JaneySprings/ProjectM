@@ -3,7 +3,7 @@ switch(GenerationStepIndex) {
 	case 0: //Room Targeting and reset position
 		if (GenerationStepNext) {
 			if (instance_exists(oPlayer)) {
-				oPlayer.DisableInput = true;
+				oPlayer.function_DisableUserInput = true;
 				oPlayer.x = 0;
 				oPlayer.y = -64;
 			}
@@ -11,19 +11,19 @@ switch(GenerationStepIndex) {
 			room_goto(TargetRoomIndex);
 			ParticleIndex = irandom(8);
 			GenerationStepNext = false;
-			alarm[0] = 90;
+			alarm[0] = TimeLoadDelay[0];
 		}
 	break;
 	case 1: //Create player if he is exists
 		if (GenerationStepNext) {
 			if (!instance_exists(oPlayer))
 				with(instance_create_layer(0,0,"PlayerLayer",oPlayer)) {
-					DisableInput = true;
+					function_DisableUserInput = true;
 					x = 0;
 					y = -64;
 				}
 			GenerationStepNext = false;
-			alarm[0] = 60;
+			alarm[0] = TimeLoadDelay[1];
 		}
 	break;
 
@@ -37,7 +37,7 @@ switch(GenerationStepIndex) {
 				default: DebugMessage = scrGetString(global.langtype,"map_generator_debug_messages","debug_message_2"); break;
 			}
 			GenerationStepNext = false
-			alarm[0] = 100;
+			alarm[0] = TimeLoadDelay[2];
 		}
 	break;
 	case 3: //Set patterns and move Generator around the map
@@ -58,7 +58,7 @@ switch(GenerationStepIndex) {
 						}
 					}
 			GenerationStepNext = false;
-			alarm[0] = 100;
+			alarm[0] = TimeLoadDelay[3];
 		}
 	break;
 	
@@ -70,14 +70,14 @@ switch(GenerationStepIndex) {
 			oCamera.x = PlayerSpawnpoint_X;
 			oPlayer.y = PlayerSpawnpoint_Y;
 			oCamera.y = PlayerSpawnpoint_Y;
-			oPlayer.DisableInput = false;
+			oPlayer.function_DisableUserInput = false;
 			
 			with (instance_create_layer(x,y,"PlayerLayer",SOUND_PLAYER)) snd_mustplay = other.AudioPlayId;
 			if (CreateStartCutscene) and (!instance_exists(oStartCutsc)) instance_create_layer(PlayerSpawnpoint_X,PlayerSpawnpoint_Y,"TextLayer",oStartCutsc);
 
 			CreateMapSurface = true;
 			GenerationStepNext = false;
-			alarm[0] = 80;
+			alarm[0] = TimeLoadDelay[4];
 		}
 	break;
 	case 5: AlphaFadeout_1 = true; break; //End action

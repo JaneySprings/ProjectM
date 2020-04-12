@@ -10,5 +10,5 @@ VBuffer = vertex_create_buffer();
 surf = -1;
 ShadowMap = -1;
 
-Alpha = 0.7;
+alpha = 0.7;
 TRACE_RAY = true;

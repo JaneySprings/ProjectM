@@ -1,9 +1,9 @@
 ///Add Physics and kinematic for all class inhireids
-hsp = move * WalkSpeed;
+physics_VelocityH = move * physics_VelocityH_increed;
 scrPhysics();
 
-//Invisible logic if catch damage
-if (Invisible) image_alpha = 0.4;
+//function_SetPlayerInvisible logic if catch damage
+if (function_SetPlayerInvisible) image_alpha = 0.4;
 else image_alpha = 1;
 
 //Trace if player near and trigger zone enable
@@ -26,8 +26,8 @@ if (CurrentHp <= 0) {
 	
 	if (instance_exists(SelfBulletId)) instance_destroy(SelfBulletId);
 	if (_rand == 5) with(instance_create_layer(x,y,"SpecialLayer",oPowerUp)) {
-		hsp = random_range(-4,4);
-		vsp = random_range(-6,-2);
+		physics_VelocityH = random_range(-4,4);
+		physics_VelocityV = random_range(-6,-2);
 	}
 	
 	scrPartTypeMain(ChunkParticle,noone,0,0,0.15,-90,200,250,false);
@@ -54,7 +54,7 @@ if (CurrentHp <= 0) {
 	
 	repeat(5 + irandom(10)) 
 		with(instance_create_layer(x,y,"BulletLayer",oExperienceParticle)) {
-			hsp = choose(-1,1) * (1 + irandom(3));
-			vsp = -5
+			physics_VelocityH = choose(-1,1) * (1 + irandom(3));
+			physics_VelocityV = -5
 		}	instance_destroy();
 }

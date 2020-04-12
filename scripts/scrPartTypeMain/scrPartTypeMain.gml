@@ -3,8 +3,8 @@
 /// @param pt_type 
 /// @param pt_xscale
 /// @param pt_yscale
-/// @param grv_size
-/// @param grv_dir
+/// @param physics_Gravity_size
+/// @param physics_Gravity_dir
 /// @param min_life 
 /// @param max_life
 /// @param blend

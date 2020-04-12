@@ -8,8 +8,8 @@ if (place_meeting(x,y,oPlayer) and (!StartAnimation)) {
 
 if (!StartAnimation) {
     scrPhysics();
-    if (place_meeting(x+sign(hsp),y,oWall)) hsp = -hsp;
-    if (place_meeting(x,y+1,oWall)) hsp = 0;
+    if (place_meeting(x+sign(physics_VelocityH),y,oWall)) physics_VelocityH = -physics_VelocityH;
+    if (place_meeting(x,y+1,oWall)) physics_VelocityH = 0;
 } else {
     var TargetX = oCamera.x - 200;
     var TargetY = oCamera.y + 250;

@@ -88,7 +88,7 @@ if (surface_exists(ShadowMap)) {
 	gpu_set_blendmode(bm_add);
 	shader_set(glsl_light);
 	shader_set_uniform_f( LightPosRadius, lx,ly,rad,0.0 );
-	draw_surface_ext(ShadowMap,x-rad,y-rad,1,1,0,image_blend,Alpha);
+	draw_surface_ext(ShadowMap,x-rad,y-rad,1,1,0,image_blend,alpha);
 	shader_reset();
 	gpu_set_blendmode(bm_normal);
 } else TRACE_RAY = true;

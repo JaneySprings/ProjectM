@@ -1,6 +1,6 @@
 event_inherited();
 //Simple walk animation (Eye direction)
-if (hsp != 0) image_xscale = sign(hsp);
+if (physics_VelocityH != 0) image_xscale = sign(physics_VelocityH);
 
 //Triggered state
 if (instance_exists(oPlayer)) {
@@ -28,8 +28,8 @@ if (instance_exists(oPlayer)) {
 						image_xscale = other.image_xscale;
 						DamageToPlayer = 10;
 						LiveTime = 30;
-						hspeed = 4 * other.image_xscale;
-						vspeed = 0.2;
+						physics_VelocityHeed = 4 * other.image_xscale;
+						physics_VelocityVeed = 0.2;
 					}
 					audio_play_sound(snd_sfx5, 1, false);
 					CanShoot = false;
@@ -67,13 +67,13 @@ if (instance_exists(oPlayer)) {
 		}	
 	} else {
 		sprite_index = GhostWalk;
-		if (!place_meeting(x+hsp*10,y+1,oWall) and place_meeting(x,y+1,oWall)) or (place_meeting(x+sign(hsp),y,oWall))
+		if (!place_meeting(x+physics_VelocityH*10,y+1,oWall) and place_meeting(x,y+1,oWall)) or (place_meeting(x+sign(physics_VelocityH),y,oWall))
 			move = -move;
 		else if (move == 0) move = choose(-1,1);
 	}
 } else {
 		sprite_index = GhostWalk;
-		if (!place_meeting(x+hsp*10,y+1,oWall) and place_meeting(x,y+1,oWall)) or (place_meeting(x+sign(hsp),y,oWall))
+		if (!place_meeting(x+physics_VelocityH*10,y+1,oWall) and place_meeting(x,y+1,oWall)) or (place_meeting(x+sign(physics_VelocityH),y,oWall))
 			move = -move;
 		else if (move == 0) move = choose(-1,1);
 }

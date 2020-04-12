@@ -1,4 +1,4 @@
-var KeyUp = global.keyUpP;
+var KeyUp = global.InputKeycodeUP_pressed;
 
 if (instance_exists(oPlayer)) {
 	DistanceToPlayer = distance_to_object(oPlayer);

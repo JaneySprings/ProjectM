@@ -32,6 +32,12 @@ TargetRoomIndex =		noone;
 AudioStopId =			noone;
 AudioPlayId =			noone;
 
+TimeLoadDelay[0] = 1; //90
+TimeLoadDelay[1] = 1; //60
+TimeLoadDelay[2] = 1; //120
+TimeLoadDelay[3] = 1; //100
+TimeLoadDelay[4] = 1; //80
+
 ParticleIndex = 		-1;
 LoadSystem =			part_system_create();
 LoadParticle =			part_type_create();

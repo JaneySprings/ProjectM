@@ -17,10 +17,10 @@ Angle += AngleVelocity;
 var new_x = AnchorX + lengthdir_x(Distance , Angle);
 var new_y = AnchorY + lengthdir_y(Distance , Angle);
 
-hsp = new_x - x;
-vsp = new_y - y;
+physics_VelocityH = new_x - x;
+physics_VelocityV = new_y - y;
 
-x += hsp;
-y += vsp;
+x += physics_VelocityH;
+y += physics_VelocityV;
 
 image_angle = Angle+90;

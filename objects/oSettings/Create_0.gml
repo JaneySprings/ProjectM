@@ -1,22 +1,22 @@
-menu_x =			96;
-menu_y =			748;
-menu_speed =		1;
-menu_font =			fMenu;
-menu_itemheight =	font_get_size(fMenu);
-menu_committed =	-1;
-menu_control =		true;
+MenuPositionX =			96;
+MenuPositionY =			748;
+MenuTransitionSpeed =		1;
+MenuCurrentFont =			fMenu;
+MenuItemHeight =	font_get_size(fMenu);
+MenuSelectedPosition =	-1;
+MenuCanChange =		true;
 
-menu[4] =			scrGetString(global.langtype,"main_menu_items","menu_item_9");
-menu[3] =			scrGetString(global.langtype,"main_menu_items","menu_item_8");
-menu[2] =			scrGetString(global.langtype,"main_menu_items","menu_item_7");
-menu[1] =			scrGetString(global.langtype,"main_menu_items","menu_item_6");
-menu[0] =			scrGetString(global.langtype,"main_menu_items","menu_item_5");
+MenuNamesArray[4] =			scrGetString(global.langtype,"main_menu_items","menu_item_9");
+MenuNamesArray[3] =			scrGetString(global.langtype,"main_menu_items","menu_item_8");
+MenuNamesArray[2] =			scrGetString(global.langtype,"main_menu_items","menu_item_7");
+MenuNamesArray[1] =			scrGetString(global.langtype,"main_menu_items","menu_item_6");
+MenuNamesArray[0] =			scrGetString(global.langtype,"main_menu_items","menu_item_5");
 
 On =				scrGetString(global.langtype,"main_menu_items","menu_item_key_on");
 Off =				scrGetString(global.langtype,"main_menu_items","menu_item_key_off");
 
-menu_items =		array_length_1d(menu);
-menu_cursor =		4; 
+MenuItemsCount =		array_length_1d(MenuNamesArray);
+MenuCurrentPosition =		4; 
 
 alpha =				1;
 alpha_set =			true;

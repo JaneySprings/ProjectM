@@ -1,13 +1,13 @@
-vsp =				0;
-grv =				0.6;
-hsp =				0;
+physics_VelocityV =				0;
+physics_Gravity =				0.6;
+physics_VelocityH =				0;
 move =			0;
 
 OtherDamage =	0;
 SelfBulletId =		noone;
 HpCell =					40/CurrentHp;
 
-Invisible =				false;
+function_SetPlayerInvisible =				false;
 Triggered =			false;
 PlayerDistance =	0;
 

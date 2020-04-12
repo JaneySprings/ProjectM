@@ -1,1 +1,1 @@
-Invisible = false;
+function_SetPlayerInvisible = false;

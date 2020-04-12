@@ -1,10 +1,10 @@
-surf_blur_pass = surface_create (480,270);
-surf_bloom = surface_create (480,270);
-surf_app_resize = surface_create (480,270);
-
-w = 480;
-h = 270;
+w = const_ScreenWidth_render;
+h = const_ScreenHeight_render;
 i = 0;
+
+surf_blur_pass = surface_create (w,h);
+surf_bloom = surface_create (w,h);
+surf_app_resize = surface_create (w,h);
 
 Xpos = 0;
 Ypos = 0;
@@ -13,6 +13,7 @@ DisableFog2d = false;
 ScreenW = window_get_width();
 ScreenH = window_get_height();
 
+// Aspect Ratio 
 var k = floor(window_get_width() / window_get_height());
 
 if (k < (16/9)) {

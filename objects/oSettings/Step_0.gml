@@ -1,38 +1,38 @@
 //keys
-var key_up =		global.keyUpP;
-var key_down =		global.keyDownP;
-var key_left =		global.keyLeftP;;
-var key_right =		global.keyRightP;;
-var key_esc =		global.keyEscP;
+var key_up =		global.InputKeycodeUP_pressed;
+var key_down =		global.InputKeycodeDOWN_pressed;
+var key_left =		global.InputKeycodeLEFT_pressed;;
+var key_right =		global.InputKeycodeRIGHT_pressed;;
+var key_esc =		global.InputKeycodeESCAPE_pressed;
 
-if (menu_control)
+if (MenuCanChange)
 {
 	if (key_up)
 	{
 		audio_play_sound(sMenuControl,1,false);;
-		menu_cursor++;
-		if (menu_cursor >= menu_items)
-			menu_cursor = 0;
+		MenuCurrentPosition++;
+		if (MenuCurrentPosition >= MenuItemsCount)
+			MenuCurrentPosition = 0;
 	}
 	if (key_down)
 	{
 		audio_play_sound(sMenuControl,1,false);
-		menu_cursor--;
-		if (menu_cursor < 0)
-			menu_cursor = menu_items-1;
+		MenuCurrentPosition--;
+		if (MenuCurrentPosition < 0)
+			MenuCurrentPosition = MenuItemsCount-1;
 	}
 	if (key_esc)
 	{
 		audio_play_sound(sMenuConfirm,1,false);
-		menu_committed = -2;
+		MenuSelectedPosition = -2;
 	}
 }
 
-//menu switch
+//MenuNamesArray switch
 
-if (menu_committed != -1)
+if (MenuSelectedPosition != -1)
 {
-	switch (menu_committed)
+	switch (MenuSelectedPosition)
 	{
 		case 4: //resolution
 		{
@@ -41,32 +41,32 @@ if (menu_committed != -1)
 				global.resolution = CurResIndex;
 				window_set_size(res[CurResIndex, 0],res[CurResIndex, 1]);
 			}
-			menu_committed = -1;
+			MenuSelectedPosition = -1;
 			break;
 		}
 		case 3: //fullscreen
 		{
 			window_set_fullscreen(global.fullscreenMode);
 			game_set_speed(60,fps);
-			menu_committed = -1;
+			MenuSelectedPosition = -1;
 			break;	
 		}
 		case 2: //FXAA
 		{
-			menu_committed = -1;
+			MenuSelectedPosition = -1;
 			break;
 		}
 		case 1: //Volume
 		{	
 			global.volumeState = CurVolume;
 			audio_master_gain(global.volumeState);
-			menu_committed = -1;
+			MenuSelectedPosition = -1;
 			break;
 		}
 		case 0: //lang
 		{
 			global.langtype = langType[CurLangIndex];
-			menu_committed = -1;
+			MenuSelectedPosition = -1;
 			break;
 		}
 		default: {
@@ -93,53 +93,53 @@ if (!alpha_set)
 }
 
 //resolution navigation 
-if (menu_cursor == 4) and (!global.fullscreenMode) {
+if (MenuCurrentPosition == 4) and (!global.fullscreenMode) {
 	if (key_right) {
 		if (CurResIndex < ResCount) CurResIndex++;
-		menu_committed = menu_cursor;
+		MenuSelectedPosition = MenuCurrentPosition;
 	}
 	if (key_left) {
 		if (CurResIndex > 0) CurResIndex--;
-		menu_committed = menu_cursor;
+		MenuSelectedPosition = MenuCurrentPosition;
 	}
 }
 //Fullscreen
-if (menu_cursor == 3) {
+if (MenuCurrentPosition == 3) {
 	if (key_right or key_left) {
 		global.fullscreenMode = !global.fullscreenMode;
-		menu_committed = menu_cursor;
+		MenuSelectedPosition = MenuCurrentPosition;
 	}
 }
 //Rays
-if (menu_cursor == 2) {
+if (MenuCurrentPosition == 2) {
 	if (key_right or key_left) {
 		global.raytrace = !global.raytrace;
-		menu_committed = menu_cursor;
+		MenuSelectedPosition = MenuCurrentPosition;
 	}
 }
 //volume
-if (menu_cursor == 1) {
+if (MenuCurrentPosition == 1) {
 	if (key_right) {
 		if (CurVolume < 1) CurVolume += 0.1;
-		menu_committed = menu_cursor;
+		MenuSelectedPosition = MenuCurrentPosition;
 	}
 	if (key_left) {
 		if (CurVolume > 0) CurVolume -= 0.1;
-		menu_committed = menu_cursor;
+		MenuSelectedPosition = MenuCurrentPosition;
 	}
 }
 //lang
-if (menu_cursor == 0) {
+if (MenuCurrentPosition == 0) {
 	if (key_right) {
 		if (CurLangIndex < LangCount-1) CurLangIndex++;
 		else CurLangIndex = 0;
 		
-		menu_committed = menu_cursor;
+		MenuSelectedPosition = MenuCurrentPosition;
 	}
 	if (key_left) {
 		if (CurLangIndex > 0) CurLangIndex--;
 		else CurLangIndex = LangCount-1;
 		
-		menu_committed = menu_cursor;
+		MenuSelectedPosition = MenuCurrentPosition;
 	}
 }

@@ -19,8 +19,8 @@ if (Reload) {
 if (Triggered) {
 	if (Shoot) {
 		with (SelfBulletId) {
-			hspeed = 5 * image_xscale;
-			vspeed = 0.3;
+			physics_VelocityHeed = 5 * image_xscale;
+			physics_VelocityVeed = 0.3;
 			LiveTime = 150;
 		}
 		audio_play_sound(sTurretArrow,1,false);

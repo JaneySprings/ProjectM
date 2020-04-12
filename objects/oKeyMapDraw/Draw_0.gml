@@ -1,5 +1,5 @@
 if (instance_exists(oPlayer)) {
-    if (!oPlayer.HideUI) {
+    if (!oPlayer.function_SetPlayerUiInvisible) {
         var _x = oPlayer.x;
         var _y = oPlayer.y - 32;
         

@@ -1,5 +1,5 @@
 scrPhysics();
-var KeyUp = global.keyUpP;
+var KeyUp = global.InputKeycodeUP_pressed;
 
 //animation
 if (instance_exists(oPlayer))

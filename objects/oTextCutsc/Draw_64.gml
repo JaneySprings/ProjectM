@@ -1,5 +1,5 @@
-var _w = ScreenWidth;
-var _h = ScreenHeight;
+var _w = const_ScreenWidth_native;
+var _h = const_ScreenHeight_native;
 
 scrDrawSettings(fMessages,c_white,fa_right,fa_center,1);
 

@@ -1,4 +1,4 @@
-var KeySkip = global.keySpaceP;
+var KeySkip = global.InputKeycodeSPACE_pressed;
 
 l += 0.35;
 h = string_height(print);
@@ -34,8 +34,8 @@ if (quit) {
 	if (a >= 0) a -= 0.04;
 	if (a <= 0) instance_destroy();
 	with(oPlayer) {
-		DisableInput = false;
-		HideUI = false;
+		function_DisableUserInput = false;
+		function_SetPlayerUiInvisible = false;
 	}
 }
 

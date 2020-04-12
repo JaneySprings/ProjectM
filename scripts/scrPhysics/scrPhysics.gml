@@ -1,19 +1,19 @@
 //gravity
-vsp = vsp + grv;
+physics_VelocityV += physics_Gravity;
 
 //hcollision
-if (place_meeting(x+hsp,y,oWall))
+if (place_meeting(x+physics_VelocityH,y,oWall))
 {
-	while (!place_meeting(x+sign(hsp),y,oWall))
-		x = x + sign(hsp);
-	hsp = 0;
+	while (!place_meeting(x+sign(physics_VelocityH),y,oWall))
+		x = x + sign(physics_VelocityH);
+	physics_VelocityH = 0;
 }
-x = x + hsp;
+x = x + physics_VelocityH;
 //vcollision
-if (place_meeting(x,y+vsp,oWall))
+if (place_meeting(x,y+physics_VelocityV,oWall))
 {
-	while (!place_meeting(x,y+sign(vsp),oWall))
-		y = y + sign(vsp);
-	vsp = 0;
+	while (!place_meeting(x,y+sign(physics_VelocityV),oWall))
+		y = y + sign(physics_VelocityV);
+	physics_VelocityV = 0;
 }
-y = y + vsp;
+y = y + physics_VelocityV;

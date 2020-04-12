@@ -4,7 +4,7 @@ var pHoriDashRed = global.DashDamage;
 var pDoubleJumpRed = global.DoubleJumpDamage;
 var pPartShieldRed = global.PartShieldDamage;
 
-if (!Invisible) {
+if (!function_SetPlayerInvisible) {
 	if (oPlayer.FlyGroundAttack) {
 		//Damage calculate
 		flash = true;
@@ -13,13 +13,13 @@ if (!Invisible) {
 		with (instance_create_layer(x-random_range(-32,32),y-64,"TextLayer",oTextParticle)) text = string(other.OtherDamage);
 		audio_play_sound(sDamageDetect,1,false);
 		
-		Invisible = true;
+		function_SetPlayerInvisible = true;
 		alarm[0] = 30;
 	}
 	if (oPlayer.HoriDash) {
 		//Direction calculate
-		hsp = 5 * other.image_xscale;
-		vsp = -7;
+		physics_VelocityH = 5 * other.image_xscale;
+		physics_VelocityV = -7;
 		
 		//Damage calculate
 		flash = true;
@@ -28,12 +28,12 @@ if (!Invisible) {
 		with (instance_create_layer(x-random_range(-32,32),y-64,"TextLayer",oTextParticle)) text = string(other.OtherDamage);
 		audio_play_sound(sDamageDetect,1,false);
 		
-		Invisible = true;
+		function_SetPlayerInvisible = true;
 		alarm[0] = 30;
 	}
 	if (oPlayer.HighJump and oPlayer.PossibleJumping) {
 		//Direction calculate
-		vsp = - 8;
+		physics_VelocityV = - 8;
 		
 		//Damage calculate
 		flash = true;
@@ -42,13 +42,13 @@ if (!Invisible) {
 		with (instance_create_layer(x-random_range(-32,32),y-64,"TextLayer",oTextParticle)) text = string(other.OtherDamage);
 		audio_play_sound(sDamageDetect,1,false);
 		
-		Invisible = true;
+		function_SetPlayerInvisible = true;
 		alarm[0] = 30;
 	}
 	if (oPlayer.PartShield) {
 		//Direction calculate
-		hsp = 6 * other.image_xscale;
-		vsp = -5;
+		physics_VelocityH = 6 * other.image_xscale;
+		physics_VelocityV = -5;
 		
 		//Damage calculate
 		flash = true;
@@ -57,7 +57,7 @@ if (!Invisible) {
 		with (instance_create_layer(x-random_range(-32,32),y-64,"TextLayer",oTextParticle)) text = string(other.OtherDamage);
 		audio_play_sound(sDamageDetect,1,false);
 		
-		Invisible = true;
+		function_SetPlayerInvisible = true;
 		alarm[0] = 45;
 	}
 }

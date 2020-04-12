@@ -1,9 +1,9 @@
-var Key_close = 	global.keyTabP;
-var Key_exit =		global.keyEscP;
-var Key_left =		global.keyLeft;
-var Key_right = 	global.keyRight;
-var Key_up =		global.keyUp;
-var Key_down =		global.keyDown;
+var Key_close = 	global.InputKeycodeTAB_pressed;
+var Key_exit =		global.InputKeycodeESCAPE_pressed;
+var Key_left =		global.InputKeycodeLEFT;
+var Key_right = 	global.InputKeycodeRIGHT;
+var Key_up =		global.InputKeycodeUP;
+var Key_down =		global.InputKeycodeDOWN;
 
 //Key mapping
 if (Key_left)
@@ -22,8 +22,8 @@ if (Key_down)
 if (Key_close) {
 	with (oPostFX) DisableFog2d = false;
 	with (oPlayer) {
-	DisableInput =false;
-	HideUI = false;
+	function_DisableUserInput =false;
+	function_SetPlayerUiInvisible = false;
 	} instance_destroy();
 }
 

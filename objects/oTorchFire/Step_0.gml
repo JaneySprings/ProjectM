@@ -13,4 +13,4 @@ if (Flash == FlashMax) {
 	FlashMax = choose(0.5,0.6,0.7);
 }
 
-with (LightId) Alpha = other.Flash;
+with (LightId) alpha = other.Flash;

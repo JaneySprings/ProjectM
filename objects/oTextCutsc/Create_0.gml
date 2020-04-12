@@ -20,6 +20,6 @@ VoiceFirst =	noone;
 VoiceSecond =	noone;
 
 with (oPlayer) {
-	DisableInput = true;
-	HideUI = true;
+	function_DisableUserInput = true;
+	function_SetPlayerUiInvisible = true;
 }

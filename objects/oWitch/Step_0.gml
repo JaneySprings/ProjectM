@@ -18,8 +18,8 @@ if (instance_exists(oPlayer)) {
 			CastIndex = -1;
 			EndThisEvent = true;
 		
-			//Restore invisible in EnemyObjects
-			if (instance_exists(ChoosedInstance)) with (ChoosedInstance) Invisible = false;
+			//Restore function_SetPlayerInvisible in EnemyObjects
+			if (instance_exists(ChoosedInstance)) with (ChoosedInstance) function_SetPlayerInvisible = false;
 		
 			//Spawn tunder bullet
 			sprite_index = WitchAttack;
@@ -49,13 +49,13 @@ if (instance_exists(oPlayer)) {
 		//Cast ability
 		if (distance_to_object(ChoosedInstance) < 450) {
 			switch (CastIndex) {
-				case 0: //Cast always invisible
+				case 0: //Cast always function_SetPlayerInvisible
 					sprite_index = WitchCast;
 				
 					if (image_index > image_number - 1) {
 						image_speed = 0;
 						with (ChoosedInstance) {
-							Invisible = true;
+							function_SetPlayerInvisible = true;
 							Triggered = true;
 						}
 				
@@ -81,4 +81,4 @@ if (instance_exists(oPlayer)) {
 		} 
 	}
 } else sprite_index = WitchIdle;
-if (CurrentHp <= 0) and (instance_exists(ChoosedInstance)) with (ChoosedInstance) Invisible = false;
+if (CurrentHp <= 0) and (instance_exists(ChoosedInstance)) with (ChoosedInstance) function_SetPlayerInvisible = false;

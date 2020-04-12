@@ -3,7 +3,7 @@ scrDrawSettings(fText,c_white,fa_center,fa_center,1);
 
 if instance_exists(oPlayer) {
 	// Local define
-    var _keyUp = global.keyUpP;
+    var _keyUp = global.InputKeycodeUP_pressed;
     var _distanceToPlayer = distance_to_object(oPlayer);
     
 	// Distance check

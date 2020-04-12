@@ -1,9 +1,9 @@
-/// @function scrGetString(Font, Color, hAlign, vAlign, Alpha)
+/// @function scrGetString(Font, Color, hAlign, vAlign, alpha)
 /// @param {resource} Font
 /// @param {color} Color
 /// @param {constant} Horizontal 
 /// @param {constant} Vertical
-/// @param {real} Alpha
+/// @param {real} alpha
 
 draw_set_font(argument0);
 draw_set_color(argument1);

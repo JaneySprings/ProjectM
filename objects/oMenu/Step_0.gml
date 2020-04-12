@@ -1,32 +1,32 @@
-menu_x += (menu_x_target - menu_x) / menu_speed;
+MenuPositionX += (MenuPositionXTarget - MenuPositionX) / MenuTransitionSpeed;
 //key
-var _keycodeUp =		global.keyUpP;
-var _keycodeDown =		global.keyDownP;
-var _keycodeEnter =		global.keyEnterP;
+var _keycodeUp =		global.InputKeycodeUP_pressed;
+var _keycodeDown =		global.InputKeycodeDOWN_pressed;
+var _keycodeEnter =		global.InputKeycodeENTER_pressed;
 
-if (menu_control) {
+if (MenuCanChange) {
 	if (_keycodeUp) {	
 		audio_play_sound(sMenuControl,1,false);
-		menu_cursor++;
-		if (menu_cursor >= menu_items) menu_cursor = 0;
+		MenuCurrentPosition++;
+		if (MenuCurrentPosition >= MenuItemsCount) MenuCurrentPosition = 0;
 	}
 	
 	if (_keycodeDown) {
 		audio_play_sound(sMenuControl,1,false);
-		menu_cursor--;
-		if (menu_cursor < 0) menu_cursor = menu_items-1;
+		MenuCurrentPosition--;
+		if (MenuCurrentPosition < 0) MenuCurrentPosition = MenuItemsCount-1;
 	}
 	
 	if (_keycodeEnter) {
 		audio_play_sound(sMenuConfirm,1,false);
-		menu_committed = menu_cursor;
-		menu_control = false;
+		MenuSelectedPosition = MenuCurrentPosition;
+		MenuCanChange = false;
 	}
 }
 
-//menu switch
-if (menu_committed != -1)
-	switch (menu_committed) {
+//MenuNamesArray switch
+if (MenuSelectedPosition != -1)
+	switch (MenuSelectedPosition) {
 		case 4: //Button continue
 		scrLoadGlobals();
 		//Get index for map generator
@@ -37,7 +37,7 @@ if (menu_committed != -1)
 				GenerationScriptIndex = scrGetGlobals("ScriptIndex");
 				PlayerSpawnpoint_X = scrGetGlobals("X");
 				PlayerSpawnpoint_Y = scrGetGlobals("Y");
-				AudioPlayId = scrGetAudioId(global.Music);
+				AudioPlayId = scrGetAudioByName(global.Music);
 				TargetRoomIndex = scrGetGlobals("Room");
 				CreateStartCutscene = true;
 			}
@@ -59,7 +59,7 @@ if (menu_committed != -1)
 				PlayerSpawnpoint_Y = 478;
 				AudioPlayId = database1;
 				TargetRoomIndex = rLostRuins;
-				CreateStartCutscene = true; //TRUE!!!
+				CreateStartCutscene = false; //TRUE!!!
 			}
 			//Other
 			with (oNews) hide = true;
@@ -75,20 +75,20 @@ if (menu_committed != -1)
 		//Updates
 		case 1: 
 			url_open("https://vk.com/gmunity_oc"); 
-			menu_committed = -1;
-			menu_control = true;
+			MenuSelectedPosition = -1;
+			MenuCanChange = true;
 		break;
 		//Exit
 		case 0: game_end(); break;
 	}	
 	
-//alpha
-if (alpha_set) {
-	alpha -= 0.01;	
-	if (alpha == 0.3) alpha_set = false;
+//MenuSelectorAlpha
+if (MenuSelectorAlphaSet) {
+	MenuSelectorAlpha -= 0.01;	
+	if (MenuSelectorAlpha == 0.3) MenuSelectorAlphaSet = false;
 }
 
-if (!alpha_set) {
-	alpha += 0.01;	
-	if (alpha > 1) alpha_set = true;
+if (!MenuSelectorAlphaSet) {
+	MenuSelectorAlpha += 0.01;	
+	if (MenuSelectorAlpha > 1) MenuSelectorAlphaSet = true;
 }

@@ -1,24 +1,24 @@
 //DIRECTIONAL KEYS
-global.keyUp =			false;
-global.keyDown =		false;
-global.keyLeft =		false;
-global.keyRight =		false;
+global.InputKeycodeUP =					false;
+global.InputKeycodeDOWN =			false;
+global.InputKeycodeLEFT =				false;
+global.InputKeycodeRIGHT =				false;
 
 //DIRECTIONAL KEYS PRESSED
-global.keyUpP =			false;
-global.keyDownP =		false;
-global.keyLeftP =		false;
-global.keyRightP =		false;
+global.InputKeycodeUP_pressed =			false;
+global.InputKeycodeDOWN_pressed =	false;
+global.InputKeycodeLEFT_pressed =		false;
+global.InputKeycodeRIGHT_pressed =	false;
 
 
 //ACTION KEYS
-global.keySpace =		false;
-global.keySpaceP =		false;
-global.keyShiftP =		false;
-global.keyOrdfP =		false;
+global.InputKeycodeSPACE=						false;
+global.InputKeycodeSPACE_pressed =		false;
+global.InputKeycodeSHIFT_pressed =		false;
+global.InputKeycodeF_pressed =				false;
 
 //SUB KEYS
-global.keyEnterP =		false;
-global.keyEscP =		false; 
-global.keyAnyP =		false;
-global.keyTabP =		false;
+global.InputKeycodeENTER_pressed =		false;
+global.InputKeycodeESCAPE_pressed =		false; 
+global.InputKeycodeANYKEY_pressed =		false;
+global.InputKeycodeTAB_pressed =				false;

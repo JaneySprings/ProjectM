@@ -2,12 +2,12 @@ scrDrawSettings(fMenu,c_black,fa_left,fa_bottom,1);
 draw_sprite_ext(Pixel,0,0,228,1920,4,0,c_white,0.3);
 draw_sprite_ext(Pixel,0,0,832,1920,4,0,c_white,0.3);
 
-for (var i = 0; i < menu_items; i++)
+for (var i = 0; i < MenuItemsCount; i++)
 {
-	var txt = menu[i];
-	var xx = menu_x;
-	var yy = menu_y - (menu_itemheight * (i *2));
-	if (i == menu_cursor)
+	var txt = MenuNamesArray[i];
+	var xx = MenuPositionX;
+	var yy = MenuPositionY - (MenuItemHeight * (i *2));
+	if (i == MenuCurrentPosition)
 		draw_sprite_ext(Selector,0,xx-14,yy-30,2,2,0,c_white,alpha);
 	draw_set_halign(fa_left);	
 	scrDrawOutlined(xx,yy,1,txt,c_white,c_black);

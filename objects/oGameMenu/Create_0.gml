@@ -1,5 +1,5 @@
-GUI_W = 				ScreenWidth;
-GUI_H = 				ScreenHeight;
+GUI_W = 				const_ScreenWidth_native;
+GUI_H = 				const_ScreenHeight_native;
 
 col =					make_color_hsv(0,0,64*4);
 blur_range =			55;
@@ -25,6 +25,6 @@ MapIconAlpha =			0.7;
 MapIconChange = 		false;
 
 with (oPlayer) {
-	DisableInput = true;
-	HideUI = true;
+	function_DisableUserInput = true;
+	function_SetPlayerUiInvisible = true;
 } with (oPostFX) DisableFog2d = true;
